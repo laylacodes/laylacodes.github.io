@@ -288,3 +288,16 @@ body {
 
 
 }
+
+/* Tablet Landscape */
+@media screen and (max-width: 1060px) {
+    .right { width:67%; }
+    .left { width:35%; margin-left:0%;}  
+}
+
+/* Tabled Portrait */
+@media screen and (max-width: 768px) {
+    .right { width:100%; }
+    .left { width:100%; margin:0; border:none; }
+}
+
