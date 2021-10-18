@@ -10,6 +10,11 @@ body {
 	background: linear-gradient(to right, #EAA5FB, #4DDEE4);
 }
 
+a {
+	text-decoration: underline;
+	color: #4DDEE4;
+}
+
 .resume{
 	width: 800px;
 	background: #fff;
