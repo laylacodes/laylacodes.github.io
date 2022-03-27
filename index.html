@@ -1,287 +1,200 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang ="en">
 <head>
-
-    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="HandheldFriendly" content="true">
-    
-    <title> Layla's Resume </title>
     <meta charset="UTF-8">
+    <title> temporary under construction page using html, css, javascript</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
+        body{
+            background-color: #d0c9b4;
+            font-family: Tahoma;
+            font-size: 12px;
+            color: rgb(0, 0, 0);
+            min-width: 599px;
+            background: transparent url(unsplashpic.jpg) 0 0 no-repeat;
+            background-size: cover;
+        }
+        a{
+            text-decoration: none;
+            cursor: pointer;
+            color: black;
+        }
+        a.alink:hover{
+            text-decoration: underline;
+        }
+        #main{
+            width: 100%;
+            position: relative;
+            z-index: 100;
+        }
+        .wrap{
+            width: 599px;
+            margin: auto;
+
+        }
+        #header{
+            padding: 70px 0;
+
+        }
+
+        #header h1{
+            font-family: tahoma;
+            text-align: center;
+            font-size: 18px;
+            position: relative;
+            width: 280px;
+            margin: auto;
+        } 
+        #header h1::before{
+            content: "";
+            width: 40px;
+            height: 2px;
+            background-color: black;
+            position: absolute;
+            top: 50%;
+            left: 0;
+        }
+        #header h1::after{
+            content: "";
+            width: 40px;
+            height: 2px;
+            background-color: black;
+            position: absolute;
+            top: 50%;
+            right: 0;
+        }
+
+        #contents{
+            font-family: tahoma;
+            text-align: center;
+            color: black;
+            padding-bottom: 35px;
+            font-size: 22px;
+            line-height: 30px;
+            font-weight: normal;
+            margin-top: -50px;
+
+        }
+
+        #contents h2{
+            font-family: tahoma;
+            font-size: 80px;
+            line-height: 80px;
+            font-weight: 500;
+        }
+        #contents .loader{
+            padding: 20px 0;
+        }
+
+        #contents .loader .load{
+            background-color: white;
+        }
+
+        #contents .loader .load .percentage{
+            background-color: black;
+            height: 10px;
+
+        }
+
+        #contents .loader .info{
+            display: flex;
+            font-size: 18px;
+
+        }
+
+        #contents .loader .info span{
+            flex: 1;
+        }
+
+        #contents .loader .info span:first-child{
+            text-align: left;
+
+        }
+
+        #contents .loader .info span:last-child{
+            text-align: right;
+
+        }
+
+        #footer{
+            text-align: center;
+            padding-bottom: 80px;
+        }
+
+        #footer .social-links{
+            display: flex;
+            justify-content: center;
+
+        }
+
+        #footer .social-links a{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 5px;
+            width: 40px;
+            height: 40px;
+            border: 2px solid white;
+            font-size: 20px;
+            border-radius: 40px;
+
+        }
         </style>
-    <script src="https://kit.fontawesome.com/d811994ba3.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="https://codinglayla.github.io/style.css">
-  </head>
-  
-  <body>
-    <div class="wrapper">
-        <div class="resume">
-            <div class="left">
-                <div class="img_holder">
-                    <!--profile pic-->
-                    <img src="https://i.imgur.com/2ifEs50.jpg" class="picture" alt="picture">
-                </div>
-                <div class="contact_wrap pb">
-                    <!--- contact -->
-                    <div class="title">
-                        Contact
+
+
+</head>
+<body>
+    <div id="main">
+        <header id ="header">
+            <div class="wrap">
+                <h1>MY NEW WEBSITE</h1>
+            </div>
+
+        </header>
+        <section id="contents">
+            <div class="wrap">
+                <h2>UNDER <br> CONSTRUCTION</h2>
+                <div class="loader">
+                    <div class="load">
+                        <div id="count" class="percentage" style="width: 0%">
+                        
+                        </div>
                     </div>
-                    <div class="contact">
-                        <ul>
-                            <li>
-                                <div class="li_wrap">
-                                    <div class="icon"><a href="https://twitter.com/codinglayla"> <i class="fab fa-twitter"></i></div></a>
-                                    <div class="text"><a href="https://twitter.com/codinglayla">Twitter</div></a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="li_wrap">
-                                    <div class="icon"><a href="https://www.linkedin.com/in/layla-codes/"><i class="fab fa-linkedin"></i></div></a>
-                                    <div class="text"><a href="https://www.linkedin.com/in/layla-codes/">Linkedin</div></a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="li_wrap">
-                                    <div class="icon"><a href="https://laylacodes.hashnode.dev/"><i class="fas fa-keyboard"></i></div></a>
-                                    <div class="text"><a href="https://laylacodes.hashnode.dev/">Blog</div></a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="li_wrap">
-                                    <div class="icon"><a href="https://github.com/codinglayla"><i class="fab fa-github"></i></div></a>
-                                    <div class="text"><a href="https://github.com/codinglayla">github</div></a>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <!--skills-->
-                <div class="skills_wrap pb">
-                    <div class="title">
-                        skills
-                    </div>
-                    <div class="skills">
-                        <ul>
-                            <li>
-                                <div class="li_wrap">
-                                    <div class="icon"><i class="fab fa-html5"></i></div>
-                                    <div class="text">HTML</div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="li_wrap">
-                                    <div class="icon"><i class="fab fa-css3-alt"></i></div>
-                                    <div class="text">CSS</div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="li_wrap">
-                                    <div class="icon"><i class="fab fa-java"></i></div>
-                                    <div class="text">Java</div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="li_wrap">
-                                    <div class="icon"><i class="fab fa-python"></i></div>
-                                    <div class="text">Python</div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <!--hobbies-->
-                <div class="hobbies_wrap pb">
-                    <div class="title">
-                        hobbies
-                    </div>
-            
-                    <div class="hobbies">
-                        <ul>
-                            <li>
-                                <div class="li_wrap">
-                                    <div class="icon"><i class="fas fa-book"></i></div>
-                                    <div class="text">Reading</div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="li_wrap">
-                                    <div class="icon"><i class="fas fa-music"></i></div>
-                                    <div class="text">Music</div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="li_wrap">
-                                    <div class="icon"><i class="fas fa-gamepad"></i></div>
-                                    <div class="text">Gaming</div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="li_wrap">
-                                    <div class="icon"><i class="fas fa-tree"></i></div>
-                                    <div class="text">Hiking</div>
-                                </div>
-                            </li>
-                        </ul>
+                    <div class="info">
+                        <span>0%</span>
+                        <span id="progress">0%</span>
+                        <span>100%</span>
                     </div>
                 </div>
             </div>
-            <!--header-->
-            <div class="right">
-                <div class="header">
-                    <div class="name_role">
-                        <div class="name">
-                            Layla M. 
-                        </div>
-                        <div class="role">
-                            Software Engineering student & aspiring Full Stack Developer
-                        </div>
-                    </div>
-                    <div class="about">
-                        Detail-oriented and creative-minded college student with a keen interest in full-stack software development. Eager to gain experience in front or backend. 
-                    </div>
-                </div>
-            <!--education-->
-                <div class="right_inner">
-                    <div class="exp">
-                        <div class="title">
-                            Education
-                        </div>
-                        <div class="exp_wrap">
-                            <ul>
-                                <li>
-                                    <div class="li_wrap">
-                                        <div class="date">
-                                            2021- 2023
-                                        </div>
-                                        <div class="info">
-                                            <p class="info_title">
-                                                Bachelors of Science 
-                                            </p>
-                                            <p class="info_com">
-                                                Software Engineering
-                                            </p>
-                                            <p class="info_cont">
-                                                Relevant courses taken: <br> <br>
-                                                Computational Thinking, Operating Systems, Computer Ethics, Scientific Python
-                                            </p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="li_wrap">
-                                        <div class="date">
-                                            2019-2021
-                                        </div>
-                                        <div class="info">
-                                            <p class="info_title">
-                                                Associates of Science 
-                                            </p>
-                                            <p class="info_com">
-                                                Computer Programming
-                                            </p>
-                                            <p class="info_cont">
-                                                Relevant courses taken:  <br><br>
-                                                Python, C++, OOP/Java, Data Structures & Algorithms, Fundamentals of Networking, Linux, Oracle SQL
-
-
-                                            </p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li> 
-                                    <div class="li_wrap">
-                                        <div class="date">
-                                            Extracurriculars
-                                        </div>
-                                        <div class="info">
-                                            <p class="info_title">
-                                                Computer Science Student Organization 
-                                            </p>
-                                            <p class="info_com">
-                                                Student Club
-                                            </p>
-                                            <p class="info_cont">
-                                                The CSSO club is meant for Computer Science/Software Engineering majors and meets weekly. We complete homework/group projects together, attend workshops for certain frameworks/languages, and
-                                                 support one another in the journey to completing our degree. 
-                                            </p>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!--certs-->
-                    <div class="education">
-                        <div class="title">
-                            Certificates
-                        </div>
-                        <div class="education_wrap">
-                            <ul>
-                                <li>
-                                    <div class="li_wrap">
-                                        <div class="date">
-                                            FreeCodeCamp
-                                        </div>
-                                        <div class="info">
-                                            <p class="info_title">
-                                                Responsive Web Design
-                                            </p>
-                                            <p class="info_com">
-                                                Language(s) used: HTML, CSS
-                                            </p>
-                                            <p class="info_cont">
-                                                Relevant courses taken: Computational Thinking, Operating Systems, Computer Ethics, Scientific Python
-                                            </p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="li_wrap">
-                                        <div class="date">
-                                            FreeCodeCamp
-                                        </div>
-                                        <div class="info">
-                                            <p class="info_title">
-                                                Scientific Computing with Python
-                                            </p>
-                                            <p class="info_com">
-                                                Language(s) used: Python
-                                            </p>
-                                            <p class="info_cont">
-                                                Relevant courses taken: 
-                                                Python, C++, OOP/Java, Data Structures & Algorithms, Fundamentals of Networking, Linux, Oracle SQL
-                                            </p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li> <!---
-                                    <div class="li_wrap">
-                                        <div class="date">
-                                            Extracurriculars
-                                        </div>
-                                        <div class="info">
-                                            <p class="info_title">
-                                                Computer Science Student Organization
-                                            </p>
-                                            <p class="info_com">
-                                                Student Club
-                                            </p>
-                                            <p class="info_cont">
-                                                The CSSO club is meant for Computer Science/Software Engineering majors and meets weekly. We complete homework/group projects together, attend workshops for certain frameworks/languages, and
-                                                 support one another in the journey to completing our degree. 
-                                            </p>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+        </section>
+        <footer id="footer">
+            <div class="wrap">
+                <div class="social-links">
+                    <a href="https://twitter.com/codinglay"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/codinglayla/"><i class="fa fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/layla-codes/"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://laylacodes.hashnode.dev/"><i class="fa fa-rss"></i></a>
                 </div>
             </div>
-        </div>
+             
+        </footer>
     </div>
+    <script>
+        var elem = document.getElementById("count");
+        var width = 0;
+        var id = setInterval(frame, 50);
+        function frame(){
+
+            if(width >= 46){
+                clearInterval(id);
+            } else{
+                width++;
+                elem.style.width = width + '%';
+                document.getElementById("progress").innerHTML = width * 1 + '%';
+            }
+        }
+    </script>
 </body>
 </html>
